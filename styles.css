@@ -12,6 +12,10 @@ header {
     text-align: center;
 }
 
+img {
+    width: 100%;
+}
+
 header h1 {
     font-size: 2em;
     text-shadow: 1px 1px 3px black;
@@ -31,7 +35,8 @@ header h2 {
  flex-wrap:wrap;
  justify-content: space-around;
  background-color: tan;
- overflow: hidden;   
+ overflow: hidden; 
+ margin-bottom: 1em; 
 }
 
 .nav_bar a {
@@ -41,4 +46,17 @@ header h2 {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+.nav_bar a:hover {
+    color: rgb(117, 117, 76);
+    background-color: rgb(228, 210, 187);
+}
+
+.page {
+    border-bottom: 1px solid black;
+}
+
+.section_heading {
+    text-align: center;
 }
