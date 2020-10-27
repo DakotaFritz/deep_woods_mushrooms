@@ -73,7 +73,6 @@ header h2 {
     .section_container {
         display: flex;
         flex-wrap: wrap;
-        width: 90%
     }
     
     .page1 {
@@ -83,7 +82,14 @@ header h2 {
     .type_of_tour {
         display: flex;
         flex-wrap: wrap;
-        flex-basis: 20px;
+    }
+
+    .type_of_tour1,
+    .type_of_tour2,
+    .type_of_tour3,
+    .type_of_tour4 {
+        flex-basis: 50%;
+        justify-content: center;
     }
 
 }
