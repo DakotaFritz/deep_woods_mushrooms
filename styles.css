@@ -68,6 +68,11 @@ header h2 {
     border-radius: 2px;
 }
 
+form #subject,
+form #message {
+    width: 100%
+}
+
 @media (min-width: 768px) {
     
     .section_container {
