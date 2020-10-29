@@ -68,9 +68,26 @@ header h2 {
     border-radius: 2px;
 }
 
+form {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box; 
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
 form #subject,
 form #message {
-    width: 100%
+    width: 100%;
+}
+
+form #first_name,
+form #last_name,
+form #phone,
+form #email {
+    width: 49%;
 }
 
 .offerings:first-child {
