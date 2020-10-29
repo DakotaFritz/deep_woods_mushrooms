@@ -73,6 +73,10 @@ form #message {
     width: 100%
 }
 
+.offerings:first-child {
+    text-align: center;
+}
+
 @media (min-width: 768px) {
     
     .section_container {
