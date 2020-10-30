@@ -8,7 +8,7 @@ header {
     padding: 1px;
     height: 202px;
     background: linear-gradient(to bottom, rgba(61, 37, 6, 0.342), rgba(201, 143, 77, 0.336)),
-                url(images/mushroom_watermark.jpg) no-repeat center;
+                url(images/page_background.jpg) no-repeat center;
     background-size: cover;
     text-align: center;
     border-radius: 2px;
@@ -90,7 +90,19 @@ form #email {
     width: 49%;
 }
 
-.offerings:first-child {
+form #subject,
+form #message,
+form #first_name,
+form #last_name,
+form #phone,
+form #email {
+border: 1px solid black;
+border-radius: 2px;
+margin: 2px;
+padding: 5px;
+}
+
+.offerings_sub {
     text-align: center;
 }
 
@@ -100,9 +112,28 @@ form #email {
         display: flex;
         flex-wrap: wrap;
     }
+
+    #section_5 {
+        width: 100%
+    }
     
-    .page1 {
+    .about_greg,
+    .supplies_info {
+        display: flex;
+        flex-wrap: wrap;
         padding: 10px;
+    }
+
+    .about_greg img,
+    .about_greg div,
+    .supplies_info img,
+    .supplies_info div {
+        width: 50%;
+        padding: 10px; 
+    }
+
+    .supplies_info img {
+        order: 1;
     }
 
     .type_of_tour {
