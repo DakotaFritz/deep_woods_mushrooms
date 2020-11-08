@@ -31,6 +31,67 @@ header h2 {
     text-shadow: 0.5px 0.5px 1px black;
 }
 
+.hamburger {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.exp ul {
+    display: inline-block;
+    background-color:  rgba(80, 119, 80, 0.438);
+}
+
+.hamburger:hover {
+    background-color: rgb(175, 190, 175);
+}
+
+.hamburger:active {
+    background-color: rgba(240, 128, 128, 0.198);
+}
+
+#ham1,
+#ham2,
+#ham3 {
+    max-width: 40px;
+    padding: 2px 30px;
+    background-color: rgb(80, 119, 80);
+}
+
+#ham1 {
+    transform: translateY(-4px);
+}
+
+#ham3 {
+    transform: translateY(4px);
+}
+
+.change #ham1 {
+    transform: translateY(22px) rotateZ(-45deg);
+}
+
+.change #ham3 {
+    transform: translateY(-22px) rotate(45deg);
+}
+
+.change #ham2 {
+    opacity: 0;
+}
+
+nav ul {
+    display: none;
+    padding: 0;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li:hover {
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
 .nav_bar {
  display: flex;
  flex-direction: column;
@@ -106,13 +167,25 @@ padding: 5px;
     text-align: center;
 }
 
+.fb_logo {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
 /* Set the size of the div element that contains the map */
 #map {
     height: 400px;
     /* The height is 400 pixels */
     width: 100%;
     /* The width is the width of the web page */
-  }
+}
+
+.pizza-slide {
+    display: none;
+}
 
 @media (min-width: 768px) {
     
@@ -147,6 +220,7 @@ padding: 5px;
     .type_of_tour {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .type_of_tour1,
@@ -154,7 +228,15 @@ padding: 5px;
     .type_of_tour3,
     .type_of_tour4 {
         flex-basis: 50%;
-        justify-content: center;
     }
 
+}
+
+@media (min-width: 992px) {
+    .type_of_tour1,
+    .type_of_tour2,
+    .type_of_tour3,
+    .type_of_tour4 {
+        flex-basis: 30%;
+    }
 }

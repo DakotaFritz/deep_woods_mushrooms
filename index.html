@@ -6,6 +6,7 @@
         <title>Deep Woods Mushrooms</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2VpYTZVzsaWOb3zNT9ysrvry91PQPhAc&callback=initMap&libraries=&v=weekly" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel= "stylesheet" href="styles.css">
     </head>
 
@@ -15,7 +16,13 @@
                  <h2>A Mushroom Farm in Mills River, NC</h2>
         </header>
 
-        <div class="nav_bar">
+        <div id="hamburger" class="hamburger">
+            <div id="ham1" class="bar"></div><br>
+            <div id="ham2" class="bar"></div><br>
+            <div id="ham3" class="bar"></div>
+        </div>
+
+        <div class="nav_bar" style="display: none;">
             <a href="#section_1">Home</a>
             <a href="#section_2">What We Offer</a>
             <a href="#section_3">Buy Local</a>
@@ -67,14 +74,13 @@
                             <p>Let Greg Carter take you on a tour of his unique and sustainable farm. He will teach you the science of cultivating Shiitake mushrooms. Learn what kind of wood these mushrooms need to grow on and how to inoculate a log. Watch Greg at work inoculating logs, and give it a try yourself, if you like.</p>
                         </div>
                         <div class="type_of_tour2">
-                            <h5 onclick="showPizzaOptions()">Add a Wood-Fired Pizza Meal</h5>
-                                <div id="pizza">
+                            <h5 class="pizza">Add a Wood-Fired Pizza Meal</h5>
+                                <div class="pizza-slide">
                                     <h6>Farm Tour and Lunch</h6>
                                         <p>Groups of 10-14 - $35/Person</p>
                                         <p>Groups of 15+ – $25/person</p>
-                                
                                     <h6>Farm Tour and Dinner</h6>
-                                        <p>Groups of 10+ - $40/Person</p></p>
+                                        <p>Groups of 10+ - $40/Person</p>
 
                                     <h6>Mushroom Hunt & Lunch or Dinner</h6>
                                         <p>Groups of 4-9 - $90/Person</p>
@@ -144,7 +150,7 @@
                 </form>
                 <p>Phone: <a href="tel:8282433589">(828) 243-3589</a></p>
                 <p>Email: <a href="mailto:greg@deepwoodsmushrooms.net?subject=Mushrooms">greg@deepwoodsmushrooms.net</a></p>
-                <p><a href="https://www.facebook.com/DeepWoodsMushrooms">Facebook</a></p>
+                <p><a href="https://www.facebook.com/DeepWoodsMushrooms"><img src="images/facebook.png" alt="Facebook Logo" class="fb_logo">Like us on Facebook!</a></p>
             </div>
         </div>
     </body>
@@ -153,5 +159,4 @@
         <p>Created by Dakota Fritz &copy; 2020</p>
     </footer>
     <script rel="js-file" src="script.js"></script>
-
 </html>

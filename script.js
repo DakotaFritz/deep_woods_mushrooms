@@ -17,9 +17,12 @@
 //     <p>We are also available for private events, please call for further information on pricing and options.</p>`
 // }
 
-// Initialize and add the map
+$(".hamburger").click(function() {
+    $(".hamburger").toggleClass(".change");
+    $(".nav_bar").slideToggle();
+});
+
 function initMap() {
-    // The location of Uluru
     const ourLocation = { lat: 35.335171, lng: -82.642408 };
     const millsRiver = { lat: 35.367535, lng: -82.524364 };
     const transylvaniaFarmersMarket = { lat: 35.231995, lng: -82.730588 };
@@ -28,12 +31,11 @@ function initMap() {
     const sierraNevada = { lat: 35.430726, lng: -82.553794 };
     const kenmure = { lat: 35.255085, lng: -82.444495 };
 
-    // The map, centered at Uluru
     const map = new google.maps.Map(document.getElementById("map"), {
       zoom: 10,
       center: millsRiver,
     });
-    // The marker, positioned at Uluru
+    
     const marker1 = new google.maps.Marker({
       position: ourLocation,
       map: map,
@@ -59,3 +61,7 @@ function initMap() {
         map: map,
       });
   }
+
+$(".pizza").click(function() {
+    $(".pizza-slide").slideToggle();
+});
