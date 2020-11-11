@@ -95,7 +95,7 @@ nav li:hover {
 .nav_bar {
  display: flex;
  flex-direction: column;
- flex-wrap:wrap;
+ flex-wrap: wrap;
  justify-content: space-around;
  background-color: tan;
  overflow: hidden; 
@@ -129,14 +129,14 @@ nav li:hover {
     border-radius: 2px;
 }
 
-form {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 2px;
-  box-sizing: border-box; 
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+.contact_form {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
 
 form #subject,
@@ -148,7 +148,7 @@ form #first_name,
 form #last_name,
 form #phone,
 form #email {
-    width: 49%;
+    flex-grow: 1;
 }
 
 form #subject,
@@ -161,6 +161,12 @@ border: 1px solid black;
 border-radius: 2px;
 margin: 2px;
 padding: 5px;
+}
+
+.submit_form {
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
 }
 
 .offerings_sub {

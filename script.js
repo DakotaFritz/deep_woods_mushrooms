@@ -65,3 +65,15 @@ function initMap() {
 $(".pizza").click(function() {
     $(".pizza-slide").slideToggle();
 });
+
+let firstName = document.getElementById("#first_name");
+let lastName = document.getElementById("#last_name");
+let phone = document.getElementById("#phone");
+let email = document.getElementById("#email");
+let subject = document.getElementById("#subject")
+let messageContent = document.getElementById("#message");
+
+$("submit_form").click(function() {
+    var mailto = "mailto:greg@deepwoodsmushrooms.net?subject=" + subject.value + "&body=" + messageContent.value;
+    window.location.href = mailto;
+})
