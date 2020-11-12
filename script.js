@@ -66,14 +66,15 @@ $(".pizza").click(function() {
     $(".pizza-slide").slideToggle();
 });
 
-let firstName = document.getElementById("#first_name");
-let lastName = document.getElementById("#last_name");
-let phone = document.getElementById("#phone");
-let email = document.getElementById("#email");
-let subject = document.getElementById("#subject")
-let messageContent = document.getElementById("#message");
+let firstName = document.getElementById("#first_name").value;
+let lastName = document.getElementById("#last_name").value;
+let phone = document.getElementById("#phone").value;
+let email = document.getElementById("#email").value;
+let subject = document.getElementById("#subject").value;
+let messageContent = document.getElementById("#message").value;
+let submitButton = document.getElementsByClassName("submit_form").value;
 
 $("submit_form").click(function() {
-    var mailto = "mailto:greg@deepwoodsmushrooms.net?subject=" + subject.value + "&body=" + messageContent.value;
-    window.location.href = mailto;
+    // var mailto = "<a href='mailto:greg@deepwoodsmushrooms.net?subject='" + subject + "'&body='" + messageContent + "> </a>";
+    window.location.href = "mailto:greg@deepwoodsmushrooms.net?subject=" + subject + "&body=" + messageContent;
 })
