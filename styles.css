@@ -121,12 +121,20 @@ nav li:hover {
     border-bottom: 1px solid black;
 }
 
+.about_greg div h4 {
+    text-align: center;
+}
+
 .section_heading {
     text-align: center;
 }
 
 .section_images {
     border-radius: 2px;
+}
+
+.meal_comments {
+    font-size: xx-small;
 }
 
 .contact_form {
@@ -212,11 +220,16 @@ padding: 5px;
     }
 
     .about_greg img,
-    .about_greg div,
-    .supplies_info img,
-    .supplies_info div {
-        width: 50%;
+    .supplies_info img {
+        width: 40%;
+        height: auto;
         padding: 10px; 
+    }
+
+    .about_greg div,
+    .supplies_info div {
+        width: 60%;
+        padding: 10px;
     }
 
     .supplies_info img {
@@ -234,6 +247,7 @@ padding: 5px;
     .type_of_tour3,
     .type_of_tour4 {
         flex-basis: 50%;
+        padding: 10px;
     }
 
 }
