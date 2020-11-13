@@ -35,7 +35,7 @@ header h2 {
     display: inline-block;
     padding: 10px;
     cursor: pointer;
-}
+;}
 
 .exp ul {
     display: inline-block;
@@ -110,6 +110,8 @@ nav li:hover {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    width: 100%;
+    min-height: 50px;
 }
 
 .nav_bar a:hover {
@@ -135,6 +137,10 @@ nav li:hover {
 
 .meal_comments {
     font-size: xx-small;
+}
+
+.plus_minus_toggle {
+    display: none;
 }
 
 .contact_form {
