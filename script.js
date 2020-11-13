@@ -75,6 +75,6 @@ $(".submit_form").click(function() {
     let subject = document.getElementById("subject").value;
     let messageContent = document.getElementById("message").value;
     let submitButton = document.getElementsByClassName("submit_form").value;
-    window.location=`mailto:greg@deepwoodsmushrooms.net?subject=${subject}&body=${messageContent}, ${firstName} ${lastName}, ${phone}, ${email}`;
+    window.location=`mailto:greg@deepwoodsmushrooms.net?subject=${subject}&body=${messageContent}%0D%0A%0D%0A${firstName} ${lastName}%0D%0A${phone}%0D%0A${email}`;
 })
 
