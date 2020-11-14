@@ -204,6 +204,14 @@ padding: 5px;
     margin: auto;
 }
 
+#section_3 li p {
+    margin: 0;
+}
+
+#section_3 li {
+    margin: 16px;
+}
+
 .pizza-slide {
     display: none;
 }
@@ -225,7 +233,6 @@ padding: 5px;
     .about_greg img,
     .supplies_info img {
         width: 40%;
-        height: auto;
         padding: 10px; 
     }
 
@@ -268,5 +275,14 @@ padding: 5px;
         justify-content: space-around;
     }
 
+    .about_greg img {
+        width: 20%;
+        padding: 10px;
+    }
+
+    .about_greg div {
+        width: 80%;
+        padding: 10px;
+    }
 
 }
