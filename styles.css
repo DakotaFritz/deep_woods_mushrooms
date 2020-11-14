@@ -199,8 +199,9 @@ padding: 5px;
 #map {
     height: 400px;
     /* The height is 400 pixels */
-    width: 100%;
-    /* The width is the width of the web page */
+    max-width: 800px;
+    /* The width is the width of the web page */    
+    margin: auto;
 }
 
 .pizza-slide {
@@ -212,10 +213,6 @@ padding: 5px;
     .section_container {
         display: flex;
         flex-wrap: wrap;
-    }
-
-    #section_5 {
-        width: 100%
     }
     
     .about_greg,
@@ -256,6 +253,10 @@ padding: 5px;
         padding: 10px;
     }
 
+    #map {
+        width: 100%;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -263,6 +264,9 @@ padding: 5px;
     .type_of_tour2,
     .type_of_tour3,
     .type_of_tour4 {
-        flex-basis: 30%;
+        flex-basis: 24%;
+        justify-content: space-around;
     }
+
+
 }

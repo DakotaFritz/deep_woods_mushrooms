@@ -74,7 +74,8 @@ $(".submit_form").click(function() {
     let email = document.getElementById("email").value;
     let subject = document.getElementById("subject").value;
     let messageContent = document.getElementById("message").value;
+    console.log(messageContent.split(/\r?\n/).map(x => x == "" ? "\n" : x).join("\n"));
     let submitButton = document.getElementsByClassName("submit_form").value;
-    window.location=`mailto:greg@deepwoodsmushrooms.net?subject=${subject}&body=${messageContent}%0D%0A%0D%0A${firstName} ${lastName}%0D%0A${phone}%0D%0A${email}`;
+    window.location=`mailto:greg@deepwoodsmushrooms.net?subject=${subject}&body=${messageContent.split(/\r?\n/).map(x => x == "" ? "\n" : x).join("\n")}%0D%0A%0D%0A${firstName} ${lastName}%0D%0A${phone}%0D%0A${email}`;
 })
 
