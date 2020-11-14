@@ -216,6 +216,21 @@ padding: 5px;
     display: none;
 }
 
+.contact_form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+}
+
+.footer_container p {
+    margin: 10px;
+}
+
 @media (min-width: 768px) {
     
     .section_container {
