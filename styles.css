@@ -1,8 +1,10 @@
+/* Set Font Family and entire document to Border-Box */
 * {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
 }
 
+/* Make header 100% of width of viewport. Background picture with a gradient color behind it. */
 header {
     width: 100%;
     padding: 1px;
@@ -14,10 +16,12 @@ header {
     border-radius: 2px;
 }
 
+/* Limit width of images to only width of viewport on Mobile devices */
 img {
     width: 100%;
 }
 
+/* Header Title */
 header h1 {
     font-size: 2em;
     text-shadow: 1px 1px 3px black;
@@ -26,20 +30,17 @@ header h1 {
     padding-top: 40px;
 }
 
+/* Header Subtitle */
 header h2 {
     font-size: 1em;
     text-shadow: 0.5px 0.5px 1px black;
 }
 
+/* Hamburger Menu */
 .hamburger {
     display: inline-block;
     padding: 10px;
     cursor: pointer;
-;}
-
-.exp ul {
-    display: inline-block;
-    background-color:  rgba(80, 119, 80, 0.438);
 }
 
 .hamburger:hover {
@@ -78,33 +79,18 @@ header h2 {
     opacity: 0;
 }
 
-nav ul {
-    display: none;
-    padding: 0;
-}
-
-nav li {
-    list-style: none;
-}
-
-nav li:hover {
-    text-decoration-line: underline;
-    text-decoration-style: double;
-}
-
+/* Navbar set to Display: None until activated by the slideToggle() */
 .nav_bar {
- display: flex;
- flex-direction: column;
- flex-wrap: wrap;
- justify-content: space-around;
+ display: none;
  background-color: tan;
  overflow: hidden; 
  margin-bottom: 1em; 
  border-radius: 2px;
 }
 
+/* Design for Navbar elements in mobile view */
 .nav_bar a {
-    float: left;
+    display: block;
     color: olive;
     font-size: 1em;
     text-align: center;
@@ -119,45 +105,51 @@ nav li:hover {
     background-color: rgb(228, 210, 187);
 }
 
+/* Add border on the bottom of each page section */
 .page {
     border-bottom: 1px solid black;
 }
 
-.about_greg div h4 {
-    text-align: center;
-}
-
+/* Center "About Us" and Each major section heading */
+.about_greg div h4,
+.offerings_sub,
 .section_heading {
     text-align: center;
 }
 
+/* Give subtle border-radius to each image attached to each section of page */
 .section_images {
     border-radius: 2px;
 }
 
+/* Hide Pizza options before slideToggle() */
+.pizza-slide {
+    display: none;
+}
+
+/* Make the Comments on the Pizza menu smaller than the rest of the options */
 .meal_comments {
     font-size: xx-small;
 }
 
-.plus_minus_toggle {
-    display: none;
-}
-
+/* Format Contact Form to have border, border-radius, and margin */
 .contact_form {
     display: flex;
     flex-wrap: wrap;
     border: 1px solid #ccc;
     border-radius: 2px;
-    margin-top: 6px;
-    margin-bottom: 16px;
+    max-width: 400px;
+    margin: auto;
     resize: vertical;
 }
 
+/* Give Subject and Message inputs the full width of the form */
 form #subject,
 form #message {
     width: 100%;
 }
 
+/* Make each section share the width with the other box on their line */
 form #first_name,
 form #last_name,
 form #phone,
@@ -165,6 +157,7 @@ form #email {
     flex-grow: 1;
 }
 
+/* Give border, border-radius, margin, padding to each section of form */
 form #subject,
 form #message,
 form #first_name,
@@ -177,22 +170,11 @@ margin: 2px;
 padding: 5px;
 }
 
+/* Limit width on and center submit button */
 .submit_form {
     width: 30%;
     margin-left: 35%;
     margin-right: 35%;
-}
-
-.offerings_sub {
-    text-align: center;
-}
-
-.fb_logo {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
 }
 
 /* Set the size of the div element that contains the map */
@@ -204,23 +186,17 @@ padding: 5px;
     margin: auto;
 }
 
+/* Remove separation between title and content of Locations below map */
 #section_3 li p {
     margin: 0;
 }
 
+/* Add margin between end of each li p and the next li */
 #section_3 li {
     margin: 16px;
 }
 
-.pizza-slide {
-    display: none;
-}
-
-.contact_form {
-    max-width: 400px;
-    margin: auto;
-}
-
+/* Format Footer and create flexbox to move contents in Footer */
 .footer_container {
     display: flex;
     justify-content: space-between;
@@ -231,13 +207,49 @@ padding: 5px;
     margin: 10px;
 }
 
+/* First media query at 768px */
 @media (min-width: 768px) {
+
+    /* Give a greater height to larger viewport size. This also helps to keep mountains in the image more visible */
+    header {
+        height: 350px;
+    }
+
+    /* Move Title and Subtitle down to center vertically on background image */
+    header h1 {
+        padding-top: 150px;
+    }
+
+    /* Hide the hamburger menu as the width grows */
+    .hamburger {
+        display: none;
+    }
+
+    /* Make Navbar visible automatically and use flexbox row to make horizontal menu */
+    .nav_bar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: tan;
+        overflow: hidden; 
+        margin-bottom: 1em; 
+        border-radius: 2px;
+    }
+
+    /* Replaces display:none from the original styling */
+    .nav_bar a {
+        display: inherit;
+        width: auto;
+    }
     
+    /* Add flexbox to allow for multiple columns of content */
     .section_container {
         display: flex;
         flex-wrap: wrap;
     }
     
+    /* Add flexbox to allow for images and text content to dynamically move in different sections */
     .about_greg,
     .supplies_info {
         display: flex;
@@ -245,28 +257,33 @@ padding: 5px;
         padding: 10px;
     }
 
+    /* Limit width of picture of Greg in the Who We Are section */
     .about_greg img,
     .supplies_info img {
         width: 40%;
         padding: 10px; 
     }
 
+    /* Limit width of text content in the Who We Are section */
     .about_greg div,
     .supplies_info div {
         width: 60%;
         padding: 10px;
     }
 
+    /* Use Order to move image to the right of the text content that comes later in the HTML code */
     .supplies_info img {
         order: 1;
     }
 
+    /* Create flexbox for Type of Tour div */
     .type_of_tour {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
 
+    /* Create two columns for the types of tours */
     .type_of_tour1,
     .type_of_tour2,
     .type_of_tour3,
@@ -275,13 +292,12 @@ padding: 5px;
         padding: 10px;
     }
 
-    #map {
-        width: 100%;
-    }
-
 }
 
+/* Second media query */
 @media (min-width: 992px) {
+
+    /* Make Type of Tour div go to 4-column layout with space-around alignment */
     .type_of_tour1,
     .type_of_tour2,
     .type_of_tour3,
@@ -290,11 +306,13 @@ padding: 5px;
         justify-content: space-around;
     }
 
+    /* Shrink image of Greg to 20% so it is smaller in comparison to content */
     .about_greg img {
         width: 20%;
         padding: 10px;
     }
 
+    /* Increase text content in Who We Are to take up more of the width of the viewport */
     .about_greg div {
         width: 80%;
         padding: 10px;
