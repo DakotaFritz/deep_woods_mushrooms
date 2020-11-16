@@ -16,6 +16,10 @@ header {
     border-radius: 2px;
 }
 
+body {
+    background-color: rgba(169, 212, 169, 0.616);
+}
+
 /* Limit width of images to only width of viewport on Mobile devices */
 img {
     width: 100%;
