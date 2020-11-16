@@ -122,6 +122,18 @@ header h2 {
     border-radius: 2px;
 }
 
+.pizza::after {
+    content: "+";
+    font-size: 1.2em;
+    float: right;
+}
+
+.pizza_change::after {
+    content: "-";
+    font-size: 1.2em;
+    float: right;
+}
+
 /* Hide Pizza options before slideToggle() */
 .pizza-slide {
     display: none;
@@ -183,7 +195,7 @@ padding: 5px;
     /* The height is 400 pixels */
     max-width: 800px;
     /* The width is the width of the web page */    
-    margin: auto;
+    /* margin: auto; */
 }
 
 /* Remove separation between title and content of Locations below map */
@@ -242,7 +254,7 @@ padding: 5px;
         display: inherit;
         width: auto;
     }
-    
+
     /* Add flexbox to allow for multiple columns of content */
     .section_container {
         display: flex;
@@ -318,4 +330,8 @@ padding: 5px;
         padding: 10px;
     }
 
+    .map_locations {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

@@ -17,6 +17,7 @@
 //     <p>We are also available for private events, please call for further information on pricing and options.</p>`
 // }
 
+
 $(".hamburger").click(function() {
     $(".hamburger").toggleClass(".change");
     $(".nav_bar").slideToggle();
@@ -64,6 +65,7 @@ function initMap() {
 
 $(".pizza").click(function() {
     $(".pizza-slide").slideToggle();
+    $(".pizza_before").toggleClass("pizza_change")
 });
 
 $(".submit_form").click(function() {
