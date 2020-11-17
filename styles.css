@@ -223,7 +223,7 @@ padding: 5px;
 
     /* Make Navbar visible automatically and use flexbox row to make horizontal menu */
     .nav_bar {
-        display: flex;
+        display: flex !important;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
