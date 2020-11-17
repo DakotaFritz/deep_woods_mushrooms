@@ -59,26 +59,6 @@ header h2 {
     display: block;
     margin: auto;
 }
-/* 
-#ham1 {
-    transform: translateY(-4px);
-}
-
-#ham3 {
-    transform: translateY(4px);
-}
-
-.change #ham1 {
-    transform: translateY(22px) rotateZ(-45deg);
-}
-
-.change #ham3 {
-    transform: translateY(-22px) rotate(45deg);
-}
-
-.change #ham2 {
-    opacity: 0;
-} */
 
 /* Navbar set to Display: None until activated by the slideToggle() */
 .nav_bar {
@@ -158,6 +138,7 @@ header h2 {
     max-width: 400px;
     margin: auto;
     resize: vertical;
+    margin-bottom: 1em;
 }
 
 /* Give Subject and Message inputs the full width of the form */
@@ -201,6 +182,7 @@ padding: 5px;
     max-width: 800px;
     /* The width is the width of the web page */    
     margin: auto;
+    margin-bottom: 1em;
 }
 
 /* Remove separation between title and content of Locations below map */
@@ -211,6 +193,10 @@ padding: 5px;
 /* Add margin between end of each li p and the next li */
 #section_3 li {
     margin: 16px;
+}
+
+.fb {
+    margin-top: 1em;
 }
 
 .footer_container {
