@@ -1,5 +1,4 @@
 $(".hamburger").click(function() {
-    $(".hamburger").toggleClass(".change");
     $(".nav_bar").slideToggle();
 });
 
