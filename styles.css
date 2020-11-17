@@ -16,10 +16,6 @@ header {
     border-radius: 2px;
 }
 
-body {
-    background-color: rgba(169, 212, 169, 0.616);
-}
-
 /* Limit width of images to only width of viewport on Mobile devices */
 img {
     width: 100%;
@@ -146,6 +142,10 @@ header h2 {
 /* Make the Comments on the Pizza menu smaller than the rest of the options */
 .meal_comments {
     font-size: xx-small;
+}
+
+.location_list {
+    list-style-type: upper-alpha;
 }
 
 /* Format Contact Form to have border, border-radius, and margin */
