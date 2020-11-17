@@ -38,7 +38,6 @@ header h2 {
 
 /* Hamburger Menu */
 .hamburger {
-    display: inline-block;
     padding: 10px;
     cursor: pointer;
 }
@@ -55,10 +54,12 @@ header h2 {
 #ham2,
 #ham3 {
     max-width: 40px;
+    border-bottom: 3px solid rgb(48, 97, 46);
     padding: 2px 30px;
-    background-color: rgb(80, 119, 80);
+    display: block;
+    margin: auto;
 }
-
+/* 
 #ham1 {
     transform: translateY(-4px);
 }
@@ -77,7 +78,7 @@ header h2 {
 
 .change #ham2 {
     opacity: 0;
-}
+} */
 
 /* Navbar set to Display: None until activated by the slideToggle() */
 .nav_bar {
@@ -124,13 +125,13 @@ header h2 {
 
 .pizza::after {
     content: "+";
-    font-size: 1.2em;
+    font-size: 1em;
     float: right;
 }
 
 .pizza_change::after {
     content: "-";
-    font-size: 1.2em;
+    font-size: 1em;
     float: right;
 }
 
@@ -212,15 +213,9 @@ padding: 5px;
     margin: 16px;
 }
 
-/* Format Footer and create flexbox to move contents in Footer */
 .footer_container {
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
     font-size: small;
-}
-
-.footer_container p {
-    margin: 10px;
 }
 
 /* First media query at 768px */
@@ -308,6 +303,25 @@ padding: 5px;
         padding: 10px;
     }
 
+    /* Format Footer and create flexbox to move contents in Footer */
+    .footer_container {
+        display: flex;
+        font-size: small;
+    }
+
+    .footer_container p {
+        margin-right: 10px;
+    }
+
+    .footer_container p:nth-child(2)::before,
+    .footer_container p:nth-child(3)::before {
+        margin-right: 10px;
+        content: "|";
+    }
+
+    .footer_container p:nth-child(3) {
+        margin-right: auto;
+    }
 }
 
 /* Second media query */
