@@ -179,9 +179,8 @@ padding: 5px;
 #map {
     height: 400px;
     /* The height is 400 pixels */
-    max-width: 800px;
+    max-width: 991px;
     /* The width is the width of the web page */    
-    margin: auto;
     margin-bottom: 1em;
 }
 
