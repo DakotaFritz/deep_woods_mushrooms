@@ -103,6 +103,7 @@ header h2 {
     border-radius: 2px;
 }
 
+/* Add + and - with ::after pseudo-elements */
 .pizza::after {
     content: "+";
     font-size: 1em;
@@ -125,6 +126,7 @@ header h2 {
     font-size: xx-small;
 }
 
+/* Give location_list alphavetical bullet points to correspond to the labels on the map */
 .location_list {
     list-style-type: upper-alpha;
 }
@@ -194,10 +196,12 @@ padding: 5px;
     margin: 16px;
 }
 
+/* Move like button away from top-margin (border line) of element above it */
 .fb-like {
     margin-top: 1em;
 }
 
+/* Center footer contents in mobile view */
 .footer_container {
     text-align: center;
     font-size: small;
@@ -294,16 +298,19 @@ padding: 5px;
         font-size: small;
     }
 
+    /* Give each footer-container element 10px of margin-right */
     .footer_container p {
         margin-right: 10px;
     }
 
+    /* Add | and 10px more margin-right to center the | */
     .footer_container p:nth-child(2)::before,
     .footer_container p:nth-child(3)::before {
         margin-right: 10px;
         content: "|";
     }
 
+    /* Use margin-right to push last child to the right of the page */
     .footer_container p:nth-child(3) {
         margin-right: auto;
     }
@@ -333,10 +340,12 @@ padding: 5px;
         padding: 10px;
     }
 
+    /* Create flexbox for map and map location list in larger viewports */
     .map_locations {
         display: flex;
     }
 
+    /* Make map able to take up twice as much space in flexbox in larger viewports */
     #map {
         flex-grow: 2;
     }

@@ -1,3 +1,4 @@
+// Create Hamburger menu that toggles .nav_bar
 $(".hamburger").click(function() {
     $(".nav_bar").slideToggle();
 });
@@ -123,21 +124,22 @@ function initMap() {
     });
   }
 
+// Toggle Pizza menu with slideToggle and toggleClass to susbstitute +/-
 $(".pizza").click(function() {
     $(".pizza-slide").slideToggle();
     $(".pizza_before").toggleClass("pizza_change")
 });
 
+// Collect form input and place it in a mailto: on the click
 $(".submit_form").click(function() {
-    // var mailto = "<a href='mailto:greg@deepwoodsmushrooms.net?subject='" + subject + "'&body='" + messageContent + "> </a>";
     let firstName = document.getElementById("first_name").value;
     let lastName = document.getElementById("last_name").value;
     let phone = document.getElementById("phone").value;
     let email = document.getElementById("email").value;
     let subject = document.getElementById("subject").value;
     let messageContent = document.getElementById("message").value;
-    console.log(messageContent.split(/\r?\n/).map(x => x == "" ? "\n" : x).join("\n"));
     let submitButton = document.getElementsByClassName("submit_form").value;
     window.location=`mailto:greg@deepwoodsmushrooms.net?subject=${subject}&body=${messageContent.split(/\r?\n/).map(x => x == "" ? "\n" : x).join("\n")}%0D%0A%0D%0A${firstName} ${lastName}%0D%0A${phone}%0D%0A${email}`;
 })
+
 
